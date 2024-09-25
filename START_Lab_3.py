@@ -84,3 +84,5 @@ def lab3Question5(temperature, scale_used):
             return "Solid"
         else:
             return "Gas"
+    else:
+        return "Invalid"
