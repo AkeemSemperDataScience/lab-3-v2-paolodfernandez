@@ -12,13 +12,13 @@ def lab3Question2(decimal_number):
     # Return "invalid" if the input is not a float
     if isinstance(decimal_number, float):
         if decimal_number > 0:
-            print("positive")
+            return "positive" 
         else: 
-            print("negative")
+            return "negative"
     elif decimal_number == 0:
-            print("zero")
+            return "zero"
     else: 
-        print("invalid")
+        return "invalid"
 
 
 def lab3Question3(year):
