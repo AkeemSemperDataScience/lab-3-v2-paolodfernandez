@@ -17,6 +17,8 @@ def lab3Question2(decimal_number):
             return "negative"
     elif decimal_number == 0:
             return "zero"
+    elif decimal_number < 0:
+         return "negative"
     else: 
         return "invalid"
 
