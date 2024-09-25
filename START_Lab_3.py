@@ -36,7 +36,18 @@ def lab3Question4(number_1, number_2, number_3):
     # Take in three numbers as arguments
     # Return the largest of the three numbers
     # Return None if the inputs are not 3 numbers
-    pass
+    if all(type(_) is int for _ in (number_1, number_2, number_3)):
+        max_number = number_1
+        if number_2 > max_number:
+            max_number = number_2
+        if number_3 > max_number:
+            max_number = number_3
+        if number_2 > number_3:
+            max_number = number_2
+        return max_number
+    else:
+        return None
+
 
 def lab3Question5(temperature, scale_used):
     # Take in a temperature and the scale that the temperature is in - either "C" for Celsius or "F" for Fahrenheit (capitalized)
